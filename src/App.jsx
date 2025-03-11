@@ -55,6 +55,7 @@ export default function QuizGame() {
       }
       else if(["0","A","D","E","F","H","I","J"].includes(event.key.toUpperCase()) && event.ctrlKey){
         const key = event.key;
+        console.log("Ctrl + A が押されました");
         setChoiceImages((prev) => ({
           ...prev,
           m: `/materials/Q7/n7_options/n7_1${key}.png`
