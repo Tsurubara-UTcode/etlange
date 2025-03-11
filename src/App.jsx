@@ -20,7 +20,7 @@ export default function QuizGame() {
   const borderStyle = questionNumber === 6 
     ? { 
         border: "5px double white", // 二重の枠線
-        padding: "10px" // 枠線の余白
+        padding: "2px" // 枠線の余白
       } 
     : {};
 
@@ -235,7 +235,7 @@ export default function QuizGame() {
       <p className="header custom-font2" style={{marginLeft:"20pt", marginTop: '40pt', color: 'white', fontSize: '4rem' ,...borderStyle}}>
         のお
       </p>
-      <p className="header custom-font2" style={{ marginLeft: '200pt', marginTop: '40pt', color: 'white', fontSize: '6rem' }}>
+      <p className="header custom-font2" style={{ marginLeft: '210pt', marginTop: '40pt', color: 'white', fontSize: '6rem' }}>
         えとらんじえ
       </p>
       <p className="header custom-font" style={{ marginLeft: '60pt', marginTop: '40pt', color: 'white', fontWeight: 'bold', fontSize: '1.5rem' }}>
