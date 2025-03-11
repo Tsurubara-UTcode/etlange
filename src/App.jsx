@@ -44,7 +44,7 @@ export default function QuizGame() {
         setSlideNumber((prev) => Math.max(1, event.key === "ArrowLeft" ? prev - 1 : prev + 1));
       }else if (event.key === " ") {
         setIsRunning((prev) => !prev);
-      }else if( event.ctrlKey&&["0","A","D","E","F","H","I","J"].includes(event.key.toUpperCase()) ){
+      }else if( event.ctrlKey&&["0","A","D","E","F","H","I","J","L","N","O","P","Q","T"].includes(event.key.toUpperCase()) ){
         const key = event.key;
         console.log("Ctrl + A が押されました");
         setChoiceImages((prev) => ({
@@ -53,16 +53,8 @@ export default function QuizGame() {
         }));
         setHighlightedChoice("m");
         console.log(key,'キーだね' );
-      }else if(event.shift&&["0","A","D","E","F","H","I","J"].includes(event.key.toUpperCase()) ){
-        const key = event.key;
-        setChoiceImages((prev) => ({
-          ...prev,
-          m: `/materials/Q7/n7_options/n7_2${key}.png`
-        }));
-        setHighlightedChoice("m");
-        console.log(key,'キーだね' );
       }
-      else if(["0","A","D","E","F","H","I","J"].includes(event.key.toUpperCase())){
+      else if(["0","A","D","E","F","H","I","J","L","N","O","P","Q","T"].includes(event.key.toUpperCase())){
         const key = event.key;
         setChoiceImages((prev) => ({
           ...prev,
