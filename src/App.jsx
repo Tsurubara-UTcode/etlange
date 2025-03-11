@@ -17,6 +17,12 @@ export default function QuizGame() {
   const[yr,setYR]=useState(0);
   const [showVideo, setShowVideo] = useState(false);
   const videoRef = useRef(null);  // 動画の参照
+  const borderStyle = questionNumber === 6 
+    ? { 
+        border: "5px double white", // 二重の枠線
+        padding: "10px" // 枠線の余白
+      } 
+    : {};
 
   useEffect(() => {
     if (!isRunning) return;
@@ -226,7 +232,7 @@ export default function QuizGame() {
       <p className="custom-font" style={{position: "absolute", top: "0px", marginLeft: '120px', color: 'white', fontSize: '8rem' }}>
         {formatTime(questionNumber)}
       </p>
-      <p className="header custom-font2" style={{marginLeft:"20pt", marginTop: '40pt', color: 'white', fontSize: '4rem' }}>
+      <p className="header custom-font2" style={{marginLeft:"20pt", marginTop: '40pt', color: 'white', fontSize: '4rem' ,...borderStyle}}>
         のお
       </p>
       <p className="header custom-font2" style={{ marginLeft: '200pt', marginTop: '40pt', color: 'white', fontSize: '6rem' }}>
