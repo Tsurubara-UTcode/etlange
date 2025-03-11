@@ -235,7 +235,7 @@ export default function QuizGame() {
       <p className="header custom-font2" style={{marginLeft:"20pt", marginTop: '40pt', color: 'white', fontSize: '4rem' ,...borderStyle}}>
         のお
       </p>
-      <p className="header custom-font2" style={{ marginLeft: '240pt', marginTop: '40pt', color: 'white', fontSize: '6rem' }}>
+      <p className="header custom-font2" style={{ marginLeft: '260pt', marginTop: '40pt', color: 'white', fontSize: '6rem' }}>
         えとらんじえ
       </p>
       <p className="header custom-font" style={{ marginLeft: '60pt', marginTop: '40pt', color: 'white', fontWeight: 'bold', fontSize: '1.5rem' }}>
