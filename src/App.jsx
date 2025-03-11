@@ -232,7 +232,7 @@ export default function QuizGame() {
       <p className="custom-font" style={{position: "absolute", top: "0px", marginLeft: '120px', color: 'white', fontSize: '8rem' }}>
         {formatTime(questionNumber)}
       </p>
-      <p className="header custom-font2" style={{marginLeft:"20pt", marginTop: '40pt', color: 'white', fontSize: '3.5rem' ,...borderStyle}}>
+      <p className="header custom-font2" style={{marginLeft:"20pt", marginTop: '40pt', color: 'white', fontSize: '3.75rem' ,...borderStyle}}>
         のお
       </p>
       <p className="header custom-font2" style={{ marginLeft: '300pt', marginTop: '40pt', color: 'white', fontSize: '6rem' }}>
