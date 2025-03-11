@@ -55,18 +55,18 @@ export default function QuizGame() {
         console.log("Ctrl + A が押されました");
         setChoiceImages((prev) => ({
           ...prev,
-          m: `/materials/Q7/n7_options/n7_1${key}.png`
+          c: `/materials/Q7/n7_options/n7_1${key}.png`
         }));
-        setHighlightedChoice("m");
+        setHighlightedChoice("c");
         console.log(key,'キーだね' );
       }
       else if(["0","A","D","E","F","H","I","J","L","N","O","P","Q","T"].includes(event.key.toUpperCase())){
         const key = event.key;
         setChoiceImages((prev) => ({
           ...prev,
-          m: `/materials/Q7/n7_options/n7_${key}.png`
+          c: `/materials/Q7/n7_options/n7_${key}.png`
         }));
-        setHighlightedChoice("m");
+        setHighlightedChoice("c");
         console.log(key,'キーだね' );
       }
       else if( event.shift&& event.ctrlKey&&["0","A","D","E"].includes(event.key.toUpperCase()) ){
