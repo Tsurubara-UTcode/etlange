@@ -2,7 +2,7 @@ import {useRef, useState, useEffect } from "react";
 
 export default function QuizGame() {
   const [timer, setTimer] = useState(3840);
-  const [isRunning, setIsRunning] = useState(true);
+  const [isRunning, setIsRunning] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(1);
   const [slideNumber, setSlideNumber] = useState(1);
   const [highlightedChoice, setHighlightedChoice] = useState(null); // 選択肢のハイライト状態
