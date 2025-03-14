@@ -158,6 +158,7 @@ export default function QuizGame() {
         setShowVideo(true);
         if (videoRef.current) {
           videoRef.current.play();
+          videoRef.current.controls=false;
         }
       }else if (event.key === "Escape") {
         setShowVideo(false);
