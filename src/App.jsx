@@ -247,7 +247,7 @@ export default function QuizGame() {
 
       {/* 問題画像 */}
       <div>
-        <img className="question" src={questionImage} alt="問題画像" style={{ position: "absolute", left: "14%", width: "72vw", height: "auto", objectFit: "cover",top:"18%",justifyContent: "center"}} />
+        <img className="question" src={questionImage} alt="問題画像" style={{ position: "absolute", left: "14%", width: "72vw", height: "auto", objectFit: "cover",top:"18%"}} />
         <img src={questionFrameL} alt="問題枠" style={{ position: "absolute", left: "90%", width: "10%", height: "300pt", objectFit: "cover",top:"16%" }} />
         <img src={questionFrameR} alt="問題枠" style={{ position: "absolute", left: "0%", width: "10%", height: "300pt", objectFit: "cover",top:"16%" }} />
       </div>
