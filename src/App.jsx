@@ -55,7 +55,7 @@ export default function QuizGame() {
         setSlideNumber((prev) => Math.max(1, event.key === "ArrowLeft" ? prev - 1 : prev + 1));
       }else if (event.key === " ") {
         setIsRunning((prev) => !prev);
-      }else if( event.shift&&["0","A","D","E","F","H","I","J","L","N","O","P","Q","T"].includes(event.key.toUpperCase()) ){
+      }else if( event.altKey&&["0","A","D","E","F","H","I","J","L","N","O","P","Q","T"].includes(event.key.toUpperCase()) ){
         const key = event.key;
         console.log("Shift + A が押されました");
         setChoiceImages((prev) => ({
