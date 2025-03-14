@@ -208,7 +208,7 @@ export default function QuizGame() {
             zIndex: 2000
           }}
         >
-          <video ref={videoRef} width="100%" height="100%" controls>
+          <video ref={videoRef} width="100%" height="100%" autoPlay controls="false">
             <source src="/materials/slides/creditmovie_light.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -247,9 +247,9 @@ export default function QuizGame() {
 
       {/* 問題画像 */}
       <div>
-        <img className="question" src={questionImage} alt="問題画像" style={{ position: "absolute", left: "10%", width: "80vw", height: "auto", objectFit: "cover",justifyContent: "center",}} />
-        <img src={questionFrameL} alt="問題枠" style={{ position: "absolute", left: "90%", width: "10%", height: "300pt", objectFit: "cover" }} />
-        <img src={questionFrameR} alt="問題枠" style={{ position: "absolute", left: "0%", width: "10%", height: "300pt", objectFit: "cover" }} />
+        <img className="question" src={questionImage} alt="問題画像" style={{ position: "absolute", left: "14%", width: "72vw", height: "auto", objectFit: "cover",justifyContent: "center"}} />
+        <img src={questionFrameL} alt="問題枠" style={{ position: "absolute", left: "90%", width: "10%", height: "300pt", objectFit: "cover",top:"12%" }} />
+        <img src={questionFrameR} alt="問題枠" style={{ position: "absolute", left: "0%", width: "10%", height: "300pt", objectFit: "cover",top:"12%" }} />
       </div>
 
       {/* 選択肢 */}
