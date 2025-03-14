@@ -40,6 +40,11 @@ export default function QuizGame() {
     });
   }, [questionNumber]);
   
+  document.addEventListener("keydown", (event) => {
+    console.log("押されたキー:", event.key);
+    console.log("event.altKey:", event.altKey);
+    console.log("event.ctrlKey:", event.ctrlKey);
+  });
 
   useEffect(() => {
     const handleKeyDown = (event) => {
