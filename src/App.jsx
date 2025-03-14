@@ -206,7 +206,7 @@ export default function QuizGame() {
             zIndex: 2000
           }}
         >
-          <video ref={videoRef} width="100%" height="100%" controls="false">
+          <video ref={videoRef} width="100%" height="100%" autoPlay controls="0">
             <source src="/materials/slides/creditmovie_light.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
