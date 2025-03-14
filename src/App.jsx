@@ -155,13 +155,12 @@ export default function QuizGame() {
           y: `/materials/Q${questionNumber}/n${questionNumber}y_add.png`
         }));
       }else if (event.code==="KeyZ"){
-        setShowVideo(true);
         if (videoRef.current) {
-
           videoRef.current.controls=false;
           videoRef.current.timer=0;
           videoRef.current.play();
         }
+        setShowVideo(true);
       }else if (event.key === "Escape") {
         setShowVideo(false);
         setHighlightedChoice(null);
