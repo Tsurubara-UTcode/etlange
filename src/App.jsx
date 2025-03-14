@@ -57,7 +57,7 @@ export default function QuizGame() {
         setIsRunning((prev) => !prev);
       }else if( event.shift&&["0","A","D","E","F","H","I","J","L","N","O","P","Q","T"].includes(event.key.toUpperCase()) ){
         const key = event.key;
-        console.log("Alt + A が押されました");
+        console.log("Shift + A が押されました");
         setChoiceImages((prev) => ({
           ...prev,
           c: `/materials/Q7/n7_options/n7_1${key}.png`
@@ -72,15 +72,6 @@ export default function QuizGame() {
           c: `/materials/Q7/n7_options/n7_${key}.png`
         }));
         setHighlightedChoice("c");
-        console.log(key,'キーだね' );
-      }
-      else if( event.shift&& event.ctrlKey&&["0","A","D","E"].includes(event.key.toUpperCase()) ){
-        const key = event.key;
-        setChoiceImages((prev) => ({
-          ...prev,
-          m: `/materials/Q7/n7_options/n7_3${key}.png`
-        }));
-        setHighlightedChoice("m");
         console.log(key,'キーだね' );
       } else if (event.code === "KeyS") {
         setShowSlide((prev) => !prev);
