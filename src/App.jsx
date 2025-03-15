@@ -234,7 +234,7 @@ export default function QuizGame() {
         のお
       </p>
       <p className="header custom-font2" style={{ marginLeft: '300pt', marginTop: '40pt', color: 'white', fontSize: '6rem' }}>
-        えとらんじえ
+        えてらんじえ
       </p>
       <p className="header custom-font" style={{ marginLeft: '60pt', marginTop: '40pt', color: 'white', fontWeight: 'bold', fontSize: '1.5rem' }}>
         
