@@ -55,7 +55,7 @@ p {
 
 .dashed{
   background-image : linear-gradient(to right, #fff, #fff 20px, transparent 0px, transparent 20px);  /* 幅2の線を作る */
-  background-size: 30px 4px;          /* グラデーションの幅・高さを指定 */
+  background-size: 20px 4px;          /* グラデーションの幅・高さを指定 */
   background-position: left bottom;  /* 背景の開始位置を指定 */
   background-repeat: repeat-x;
 }
