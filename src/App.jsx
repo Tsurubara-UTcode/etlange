@@ -239,7 +239,7 @@ export default function QuizGame() {
       <p className="header custom-font" style={{ marginLeft: '60pt', marginTop: '40pt', color: 'white', fontWeight: 'bold', fontSize: '1.5rem' }}>
         
       </p>
-      <p className="custom-font" style={{ position: "absolute", top: "0px", right: "40px", textAlign: "right", color: "white", fontSize: "7rem", paddingTop: "0pt", paddingBottom: "0pt", width: "auto", border: "3px dashed" }}>
+      <p className="custom-font" style={{ position: "absolute", top: "0px", right: "40px", textAlign: "right", color: "white", fontSize: "7rem", paddingTop: "0pt", paddingBottom: "0pt", width: "auto", border: "6px dashed" }}>
         {formatTime(timer)}
       </p>
 
