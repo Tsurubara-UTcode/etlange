@@ -54,9 +54,25 @@ p {
 }
 
 .dashed{
-  background-image : linear-gradient(to right, #fff, #fff 20px, transparent 10px, transparent 10px);  /* 幅2の線を作る */
-  background-size: 40px 4px;          /* グラデーションの幅・高さを指定 */
-  background-position: left bottom;  /* 背景の開始位置を指定 */
-  background-repeat: repeat-x;
+  background-image :
+    linear-gradient(to right, #fff, #fff 20px, transparent 10px, transparent 10px),  /* 上の線 */
+    linear-gradient(to bottom, #fff, #fff 20px, transparent 10px, transparent 10px), /* 右の線 */
+    linear-gradient(to left, #fff, #fff 20px, transparent 10px, transparent 10px),  /* 下の線 */
+    linear-gradient(to top, #fff, #fff 20px, transparent 10px, transparent 10px);   /* 左の線 */
+  background-size:
+    40px 4px,  /* 上の線 */
+    4px 40px, /* 右の線 */
+    40px 4px,  /* 下の線 */
+    4px 40px;   /* 左の線 */
+  background-position:
+    left top,  /* 上の線 */
+    right top, /* 右の線 */
+    right bottom,  /* 下の線 */
+    left bottom;   /* 左の線 */
+  background-repeat:
+    repeat-x,  /* 上の線 */
+    repeat-y, /* 右の線 */
+    repeat-x,  /* 下の線 */
+    repeat-y;   /* 左の線 */
 }
 
