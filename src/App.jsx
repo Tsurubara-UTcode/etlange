@@ -1,5 +1,6 @@
 import {useRef, useState, useEffect } from "react";
 
+
 export default function QuizGame() {
   const [timer, setTimer] = useState(3840);
   const [isRunning, setIsRunning] = useState(false);
